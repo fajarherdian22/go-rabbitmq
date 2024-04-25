@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	for i := 0; i < 50; i++ {
+	for i := 0; i < 10000; i++ {
 		req, err := http.NewRequest("GET", fmt.Sprintf("http://localhost:3750/send?msg=%d", i), nil)
 		if err != nil {
 			panic(err)
